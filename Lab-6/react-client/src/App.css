@@ -1,0 +1,278 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+.navbar {
+  position: fixed;
+  top: 10px;
+  left: 0;
+  right: 0;
+  margin-left: 5%;
+  margin-right: 5%;
+  display: flex;
+  align-items: center;
+  background-color: #333;
+  padding: 1rem 2rem;
+  color: white;
+  z-index: 1000;
+}
+
+.navbar .nav-list {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar .nav-item {
+  margin: 0 1rem;
+}
+
+.navbar .nav-link {
+  color: white;
+  text-decoration: none;
+  transition: color 200ms;
+}
+
+.navbar .nav-link:hover {
+  color: #61dafb;
+}
+
+.artists-list {
+  margin-top: 2rem;
+  text-align: left;
+}
+
+.artists-list h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #f9f9f9;
+}
+
+.artists-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: space-between;
+}
+
+.artist-card {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.artist-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #222;
+}
+
+.artist-card p {
+  margin: 0.5rem 0;
+  color: #555;
+}
+
+.artist-card strong {
+  color: #333;
+}
+
+.add-artist {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #61dafb;
+  color: rgb(0, 0, 0);
+  border-radius: 8px;
+}
+
+.Addform {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.Addform label {
+  font-size: 1rem;
+  color: #333;
+}
+
+.Addform input {
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.Addform select {
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+.add-artist-button {
+  background-color: #61dafb;
+  color: #fff;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.error-message {
+  color: red;
+  font-size: 0.875rem;
+  margin-top: 0.5rem;
+}
+
+.editForm {
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  margin-top: calc(5rem + 60px);
+  width: 100%;
+}
+
+.editForm h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.editForm label {
+  font-size: 1rem;
+  color: #555;
+}
+
+.editForm input {
+  padding: 0.5rem;
+  border-radius: 4px;
+  font-size: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.editForm div {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+}
+
+.editForm select {
+  padding: 0.5rem;
+  border-radius: 4px;
+  font-size: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.delete-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  text-align: center;
+  max-width: 400px;
+  margin: 2rem auto;
+}
+
+.delete-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.delete-card p {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  color: #555;
+}
+
+.delete-button {
+  background-color: #e63946;
+  color: #fff;
+}
+
+.cancel-button {
+  background-color: #6c757d;
+  color: #fff;
+}
+
+.single-card {
+  background-color: #f4f4f4;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.single-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.single-card p {
+  margin: 0.5rem 0;
+  color: #555;
+}
+
+.single-card ul {
+  margin: 0.5rem 0;
+  padding-left: 1.5rem;
+}
+
+.single-card li {
+  margin: 0.25rem 0;
+}
+
+.single-card a {
+  color: #61dafb;
+  text-decoration: none;
+}
+
+.single-card button {
+  background-color: #61dafb;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+}
